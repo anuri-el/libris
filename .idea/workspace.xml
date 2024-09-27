@@ -5,15 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262c3103-643e-4de9-ab6f-f6e8bb7065a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libris/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/libris/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libris/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libris/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9678b297-2a7a-479a-985c-0aba8160217e" />
+        <option name="url" value="git@github.com:anuri-el/libris.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,7 +98,8 @@
       <workItem from="1726860808106" duration="117000" />
       <workItem from="1727449210393" duration="842000" />
       <workItem from="1727450120565" duration="160000" />
-      <workItem from="1727450308674" duration="789000" />
+      <workItem from="1727450308674" duration="3416000" />
+      <workItem from="1727457513390" duration="968000" />
     </task>
     <servers />
   </component>
