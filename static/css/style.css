@@ -113,6 +113,47 @@ a {
   cursor: pointer;
 }
 
+.log-in {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 7rem;
+  line-height: 2;
+}
+
+.log-in h1 {
+  padding: 2rem 0;
+  color: var(--ACCENT-COLOR); 
+}
+
+.log-in input,
+.log-in select,
+.log-in button {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0.25rem 0.5rem;
+  font-size: var(--FS); 
+}
+
+.log-in input,
+.log-in select {
+  border: 1px solid var(--ACCENT-COLOR);
+  border-radius: 0.25rem;
+}
+
+.log-in button {
+  border: none;
+  background-color: var(--ACCENT-COLOR); 
+  color: var(--BG-COLOR); 
+  padding: var(--PADDING); 
+  border-radius: 0.25rem;
+}
+
+.log-in button:hover {
+  background-color: var(--ACCENT-COLOR-HOVER); 
+  cursor: pointer;
+}
+
 /* .icon {
   max-width: 50px;
 } */

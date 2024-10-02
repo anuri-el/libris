@@ -6,6 +6,91 @@
 
 {% block content %}
 <hr> 
-    sign up
+<div class="container-xxl log-in border">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <h1>Sign up</h1>
+      
+      <label for="email">Email:</label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email"
+        required />
+      <br />
+      
+      <label for="password">Password:</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Your password"
+        required />
+      <br />
+  
+      <label for="surname">Surname:</label>
+      <br />
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Your surname"
+        required />
+      <br />
+  
+      <label for="name">Name:</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required />
+      <br />
+  
+      <label for="patronymic">Patronymic:</label>
+      <br />
+      <input
+        type="text"
+        id="patronymic"
+        name="patronymic"
+        placeholder="Your patronymic"
+        required />
+      <br />
+  
+      <label for="birthdate">Date of Birth:</label>
+      <br />
+      <input
+        type="date"
+        id="birthdate"
+        name="birthdate"
+        required />
+      <br />
+  
+      <label for="group">Select Group:</label>
+      <br />
+      <select id="group" name="group" required>
+        <option value="group1">IA-31</option>
+        <option value="group2">IA-32</option>
+        <option value="group3">IA-33</option>
+        <option value="group1">IA-34</option>
+      </select>
+      <br />
+  
+      <label for="file-upload">Upload File:</label>
+      <br />
+      <input
+        type="file"
+        id="file-upload"
+        name="file-upload"
+        accept=".pdf,.doc,.docx"
+        required />
+      <br />
+  
+      <button type="submit" class="rounded">Sign Up</button>
+    </form>
+  </div>
 <hr> 
 {% endblock %}
