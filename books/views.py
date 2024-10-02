@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, "books/index.html")
+    return render(request, "books/books_list.html")
