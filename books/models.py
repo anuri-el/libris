@@ -12,6 +12,7 @@ class Book(models.Model):
     cover_image = models.ImageField(upload_to='book_covers/', null=True, blank=True)
     # publisher = models.
     # rating = models.
+    # series = model.
     slug = models.SlugField(unique=True)
 
 

@@ -1,10 +1,9 @@
-/* || RESET */
-/* || VARIABLES */
-/* || UTILITY CLASSES */
-/* || GENERAL STYLES */
 /* || BLOCKS */
 /* || MODIFIERS */
-/* || ELEMENTS */
+
+
+
+/* || VARIABLES */
 
 :root {
   --BG-COLOR: #ffffff;
@@ -13,12 +12,16 @@
   --ACCENT-COLOR: #003cdb;
   --ACCENT-COLOR-HOVER: #002da8;
   --TEXT-COLOR: #131313;
-
+  
   --FS: 1rem;
   --FS-XL: 2rem;
-
+  
   --PADDING: 0.5rem;
 }
+
+
+
+/* || RESET */
 
 * {
   box-sizing: border-box;
@@ -34,24 +37,74 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--BG-COLOR);
-
+  
   display: flex;
   flex-direction: column;
 }
 
+
+/* || UTILITY CLASSES */
+
+a {
+  text-decoration: none;
+  color: var(--TEXT-COLOR);
+}
+
+a:focus{
+  color: var(--ACCENT-COLOR);
+}
+
+a:active{
+  color: var(--ACCENT-COLOR-HOVER);
+}
+
+h1{
+  text-decoration: underline 3px var(--ACCENT-COLOR);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* || ELEMENTS */
+
+.btn {
+  display: block;
+  background-color: var(--ACCENT-COLOR);
+  color: var(--BG-COLOR);
+  padding: var(--PADDING);
+}
+
+.btn:hover {
+  background-color: var(--ACCENT-COLOR-HOVER);
+  color: var(--BG-COLOR);
+  cursor: pointer;
+}
+
+
+/* || GENERAL STYLES */
+
+
+/* HEADER */
 header {
   padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  
   background-color: var(--BG-COLOR);
-  /* border-bottom: 1px solid var(--ACCENT-COLOR-HOVER); */
   box-shadow: 0px 0px 15px var(--COLOR-2);
+}
+
+.logo {
+  font-size: var(--FS-XL);
+  font-weight: 700;
+}
+
+.logo a {
+  color: var(--ACCENT-COLOR);
 }
 
 .header-menu {
@@ -73,6 +126,9 @@ header {
   cursor: pointer;
 }
 
+
+/* FOOTER */
+
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -81,42 +137,27 @@ footer {
   margin-bottom: 2.5rem;
 }
 
-/* footer ul li {
-  list-style: url();
-} */
-
 .footer-header {
   color: var(--ACCENT-COLOR);
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--TEXT-COLOR);
+
+
+/* SIGN-IN */
+
+.auth-group-item{
+  text-align: center;
 }
 
-.logo {
-  font-size: var(--FS-XL);
-  font-weight: 700;
-}
-
-.logo a {
+.auth-group-item a{
   color: var(--ACCENT-COLOR);
 }
 
-.btn {
-  display: block;
-  background-color: var(--ACCENT-COLOR);
-  color: var(--BG-COLOR);
-  padding: var(--PADDING);
-}
 
-.btn:hover {
-  background-color: var(--ACCENT-COLOR-HOVER);
-  color: var(--BG-COLOR);
-  cursor: pointer;
-}
+
+/* SIGN-UP */
 
 .log-in {
   display: flex;
@@ -159,9 +200,11 @@ a {
   cursor: pointer;
 }
 
-/* .icon {
-  max-width: 50px;
-} */
+
+
+
+
+
 
 @media screen and (min-width: 576px) {
 }

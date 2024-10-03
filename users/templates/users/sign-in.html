@@ -5,10 +5,46 @@
 {% endblock %} 
 
 {% block content %}
-<hr> 
-    sign in
-    <br>
-    <p>Don't have an account yet?</p>
-    <a href="../sign-up">sign up</a>
-<hr> 
+    <hr />
+
+      <div class="container border auth-group">
+        <h1>Sign in</h1>
+        <form action="" method="POST">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="autoSizingCheck" />
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+          </div>
+
+          <div class="auth-group-item"><button type="submit" class="btn btn-primary">Submit</button></div>
+
+          <hr />
+          <p class="auth-group-item">
+            Don't have an account yet? <a href="../sign-up">Sign up</a>
+          </p>
+        </form>
+      </div>
+
+      <hr />
 {% endblock %}
