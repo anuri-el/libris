@@ -9,87 +9,100 @@
 <div class="container-xxl log-in border">
     <form action="#" method="post" enctype="multipart/form-data">
       <h1>Sign up</h1>
-      
-      <label for="email">Email:</label>
-      <br />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your email"
-        required />
-      <br />
-      
-      <label for="password">Password:</label>
-      <br />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Your password"
-        required />
-      <br />
-  
-      <label for="surname">Surname:</label>
-      <br />
-      <input
-        type="text"
-        id="surname"
-        name="surname"
-        placeholder="Your surname"
-        required />
-      <br />
-  
-      <label for="name">Name:</label>
-      <br />
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name"
-        required />
-      <br />
-  
-      <label for="patronymic">Patronymic:</label>
-      <br />
-      <input
-        type="text"
-        id="patronymic"
-        name="patronymic"
-        placeholder="Your patronymic"
-        required />
-      <br />
-  
-      <label for="birthdate">Date of Birth:</label>
-      <br />
-      <input
-        type="date"
-        id="birthdate"
-        name="birthdate"
-        required />
-      <br />
-  
-      <label for="group">Select Group:</label>
-      <br />
-      <select id="group" name="group" required>
-        <option value="group1">IA-31</option>
-        <option value="group2">IA-32</option>
-        <option value="group3">IA-33</option>
-        <option value="group1">IA-34</option>
-      </select>
-      <br />
-  
-      <label for="file-upload">Upload File:</label>
-      <br />
-      <input
-        type="file"
-        id="file-upload"
-        name="file-upload"
-        accept=".pdf,.doc,.docx"
-        required />
-      <br />
-  
-      <button type="submit" class="rounded">Sign Up</button>
+
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingEmail"
+          name="email"
+          placeholder="Your email"
+          required />
+        <label for="floatingEmail">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          name="password"
+          placeholder="Your password"
+          required />
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingSurname"
+          name="surname"
+          placeholder="Your surname"
+          required />
+        <label for="floatingSurname">Surname</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingName"
+          name="name"
+          placeholder="Your name"
+          required />
+        <label for="floatingName">Name</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingPatronymic"
+          name="patronymic"
+          placeholder="Your patronymic"
+          required />
+        <label for="floatingPatronymic">Patronymic</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="date"
+          class="form-control"
+          id="floatingBirthdate"
+          name="birthdate"
+          required />
+        <label for="floatingBirthdate">Date of Birth</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="group" class="form-label">Select Group:</label>
+        <select
+          class="form-select"
+          id="group"
+          name="group"
+          required>
+          <option value="group1">IA-31</option>
+          <option value="group2">IA-32</option>
+          <option value="group3">IA-33</option>
+          <option value="group4">IA-34</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="file-upload" class="form-label">Upload File:</label>
+        <input
+          class="form-control"
+          type="file"
+          id="file-upload"
+          name="file-upload"
+          accept=".pdf,.doc,.docx"
+          required />
+      </div>
+
+      <div class="auth-group-item center">
+        <button type="submit" class="btn btn-submit">Sign Up</button>
+      </div>
     </form>
   </div>
 

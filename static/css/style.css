@@ -215,24 +215,6 @@ footer {
   border-radius: 0.25rem;
 }
 
-.log-in button {
-  border: none;
-  background-color: var(--ACCENT-COLOR); 
-  color: var(--BG-COLOR); 
-  padding: var(--PADDING); 
-  border-radius: 0.25rem;
-}
-
-.log-in button:hover {
-  background-color: var(--ACCENT-COLOR-HOVER); 
-  cursor: pointer;
-}
-
-
-
-
-
-
 
 @media screen and (min-width: 576px) {
 }
@@ -258,4 +240,45 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 576px) {
+  .log-in {
+    padding: 3rem;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .log-in {
+    padding: 4rem;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .log-in {
+    padding: 5rem;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .log-in h1 {
+    width: 100%;
+  }
+
+  .log-in input,
+  .log-in select,
+  .log-in button {
+    width: calc(50% - 1rem); 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .log-in {
+    padding: 6rem;
+    width: 50%;
+  }
 }
