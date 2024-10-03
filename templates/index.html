@@ -5,7 +5,154 @@
 {% endblock %} 
 
 {% block content %}
-<hr>
-    aaaaaaaaa
-<hr> 
+    <div class="container index p-3">
+
+        <div class="hero">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h1 class="hero-title">Meet your next favorite book</h1>
+                <a class="btn temp" href="/books">Catalog</a>
+              </div>
+              <div class="col-12 col-md-6">
+                <img
+                  class="hero-img rounded"
+                  src="https://grinchenko-inform.kubg.edu.ua/wp-content/uploads/2021/03/angl1025.jpg"
+                  alt="hero-img"
+                  loading="lazy" />
+              </div>
+            </div>
+          </div>
+  
+          <div class="cards row p-2">
+            <h2 class="header-h2">Genres</h2>
+            <div class="card col-12 col-md-4">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1706883298i/203337138.jpg"
+                    width="150px"
+                    alt="Fiction"
+                    loading="lazy"
+                    class="rounded" />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5>Fiction</h5>
+                    <p>
+                      From the New York Times bestselling co-author
+                      <sub>of</sub> Mad Honey comes an “inspiring” (Elle) novel
+                      about women.
+                    </p>
+                    <a class="card-link" href="">More fiction...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347223113i/530793.jpg"
+                    width="150px"
+                    alt="History & Biograph"
+                    loading="lazy"
+                    class="rounded" />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5>History & Biography</h5>
+                    <p>
+                      In a sweeping narrative, Fraser the
+                      cultural and political roots of each of Henry's
+                      queens.
+                    </p>
+                    <a class="card-link" href="">More history...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1723551400i/217435537.jpg"
+                    width="150px"
+                    alt="Romance"
+                    loading="lazy"
+                    class="rounded" />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5>Romance</h5>
+                    <p>
+                      A spellbinding, inspiring story <sub>of</sub> courage and
+                      determination unfolds during the tumultuous four years
+                      leading up.
+                    </p>
+                    <a class="card-link" href="">More romance...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-5">
+            <h2 class="header-h2">Best Books Ever</h2>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                <a href="#">Pride and Prejudice</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">To Kill a Mockingbird</a>
+              </li>
+              <li class="list-group-item"><a href="#">Animal Farm</a></li>
+              <li class="list-group-item">
+                <a href="#">The Picture of Dorian Gray</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">Gone with the Wind</a>
+              </li>
+            </ol>
+          </div>
+          <div class="video">
+            <h2 class="header-h2">You may also like:</h2>
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <video class="rounded" width="100%" controls autoplay muted>
+                  <source
+                    src="img/for those who want to read more books.mp4"
+                    type="video/mp4" />
+                </video>
+              </div>
+              <div class="col-12 col-md-4">
+                <a
+                  href="https://www.youtube.com/watch?v=LgRPu9YheTY"
+                  target="_blank"
+                  class="">
+                  for those who want to read more books
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <h2 class="header-h2">The nearest bookstore</h2>
+            <div
+              style="
+                overflow: hidden;
+                resize: none;
+                max-width: 100%;
+                height: 500px;
+              ">
+              <div
+                id="embed-map-display"
+                style="height: 100%; width: 100%; max-width: 100%">
+                <iframe
+                  class="rounded"
+                  style="height: 100%; width: 100%; border: 0"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=50.4652037,30.516563&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+              </div>
+            </div>
+          </div>
+
+    </div>
 {% endblock %}

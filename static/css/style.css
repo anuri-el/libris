@@ -155,6 +155,34 @@ footer {
 }
 
 
+/* INDEX */
+.hero-img{
+  width: 100%;
+}
+
+.btn.temp{
+  margin-bottom: 3rem;
+}
+
+.cards{
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card{
+  max-width: 357px;
+}
+
+.card img{
+  position: relative;
+  left: -0.9rem;
+  height: 14rem;
+  width: 9rem;
+}
+
+.header-h2{
+  margin-top: 3rem;
+}
 
 /* SIGN-IN */
 
@@ -184,6 +212,9 @@ footer {
   width: 6rem;
 }
 
+.auth-group-item .btn-submit{
+  margin-top: 5rem;
+}
 
 /* SIGN-UP */
 
@@ -285,6 +316,11 @@ footer {
     /* gap: 1rem; */
     justify-content: space-evenly;
   }
+
+  .auth-group-item .btn-submit{
+    margin-top: 10rem;
+  }
+  
 }
 
 @media screen and (min-width: 1200px) {
