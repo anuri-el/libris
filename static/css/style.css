@@ -102,7 +102,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
   
   background-color: var(--BG-COLOR);
   box-shadow: 0px 0px 15px var(--SHADOW);
@@ -159,8 +159,9 @@ footer {
 /* SIGN-IN */
 
 .auth-group{
-  margin-top: 4rem;
+  margin-top: 8vh;
   padding: 2rem;
+  margin-bottom: 24vh;
 }
 
 .auth-group-item{
