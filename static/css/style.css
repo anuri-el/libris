@@ -143,9 +143,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  padding: var(--PADDING);
   margin-bottom: 2.5rem;
   border-top: solid 1px var(--SHADOW);
+  padding: 1rem;
 }
 
 .footer-header {
@@ -216,7 +216,30 @@ footer {
 }
 
 
+/* FAQ */
+
+.div-line{
+  border-top: solid 3px var(--ACCENT-COLOR);
+  opacity: 1;
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-group p{
+  margin-bottom: 2rem;
+}
+
+.faq-group.container{
+  padding: 1.5rem;
+}
+
+
 @media screen and (min-width: 576px) {
+  .log-in {
+    padding: 3rem;
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -228,28 +251,7 @@ footer {
   .nav-item:is(:nth-child(3),:nth-child(5)){
     display: none;
   }
-}
 
-@media screen and (min-width: 992px) {
-  .nav-item:is(:nth-child(3),:nth-child(5)){
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 1400px) {
-}
-
-@media screen and (min-width: 576px) {
-  .log-in {
-    padding: 3rem;
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .log-in {
     padding: 4rem;
     width: 75%;
@@ -257,6 +259,10 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  .nav-item:is(:nth-child(3),:nth-child(5)){
+    display: block;
+  }
+
   .log-in {
     padding: 5rem;
     width: 60%;
@@ -264,15 +270,20 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
   }
-
+  
   .log-in h1 {
     width: 100%;
   }
-
+  
   .log-in input,
   .log-in select,
   .log-in button {
     width: calc(50% - 1rem); 
+  }
+
+  .faq.row{
+    /* gap: 1rem; */
+    justify-content: space-evenly;
   }
 }
 
@@ -281,4 +292,7 @@ footer {
     padding: 6rem;
     width: 50%;
   }
+}
+
+@media screen and (min-width: 1400px) {
 }
