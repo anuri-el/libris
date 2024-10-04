@@ -300,6 +300,11 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+
+  .nav-item:is(:nth-child(3),:nth-child(5)){
+    display: block;
+  }
+  
   .log-in {
     flex-direction: column; /* Забезпечує вертикальне розташування навіть на великих екранах */
     width: 60%; /* Обмеження ширини для великого екрану */
@@ -314,4 +319,20 @@ footer {
   .log-in button {
     width: 100%; /* Поля залишаються на всю ширину навіть на великих екранах */
   }
+
+  .faq.row{
+    /* gap: 1rem; */
+    justify-content: space-evenly;
+  }
+
+  .auth-group-item .btn-submit{
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
+
+@media screen and (min-width: 1400px) {
 }
