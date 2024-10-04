@@ -142,6 +142,7 @@ header {
 footer {
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--BG-COLOR);
   gap: 1rem;
   margin-bottom: 2.5rem;
   border-top: solid 1px var(--SHADOW);
@@ -222,7 +223,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%; 
 }
 
