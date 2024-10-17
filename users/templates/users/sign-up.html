@@ -1,109 +1,141 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% load static %}
 
-{% block title %} 
-    sign up
-{% endblock %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<script src="{% static 'js/main.js' %}"></script>
 
-{% block content %}
+{% block title %} sign up {% endblock %} {% block content %}
 
 <div class="container-xxl log-in">
-    <form action="#" method="post" enctype="multipart/form-data">
-      <h1>Sign up</h1>
+  <form id="signup-form" action="#" method="post" enctype="multipart/form-data">
+    <h1>Sign up</h1>
 
-      <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingEmail"
-          name="email"
-          placeholder="Your email"
-          required />
-        <label for="floatingEmail">Email address</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingEmail"
+        name="email"
+        placeholder="Your email"
+        required
+      />
+      <label for="floatingEmail">Email address</label>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input
-          type="password"
-          class="form-control"
-          id="floatingPassword"
-          name="password"
-          placeholder="Your password"
-          required />
-        <label for="floatingPassword">Password</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        name="password"
+        placeholder="Your password"
+        required
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="floatingSurname"
-          name="surname"
-          placeholder="Your surname"
-          required />
-        <label for="floatingSurname">Surname</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingSurname"
+        name="surname"
+        placeholder="Your surname"
+        required
+      />
+      <label for="floatingSurname">Surname</label>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="floatingName"
-          name="name"
-          placeholder="Your name"
-          required />
-        <label for="floatingName">Name</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingName"
+        name="name"
+        placeholder="Your name"
+        required
+      />
+      <label for="floatingName">Name</label>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="floatingPatronymic"
-          name="patronymic"
-          placeholder="Your patronymic"
-          required />
-        <label for="floatingPatronymic">Patronymic</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingPatronymic"
+        name="patronymic"
+        placeholder="Your patronymic"
+        required
+      />
+      <label for="floatingPatronymic">Patronymic</label>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input
-          type="date"
-          class="form-control"
-          id="floatingBirthdate"
-          name="birthdate"
-          required />
-        <label for="floatingBirthdate">Date of Birth</label>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="date"
+        class="form-control"
+        id="floatingBirthdate"
+        name="birthdate"
+        required
+      />
+      <label for="floatingBirthdate">Date of Birth</label>
+    </div>
 
-      <div class="mb-3">
-        <label for="group" class="form-label">Select Group:</label>
-        <select
-          class="form-select"
-          id="group"
-          name="group"
-          required>
-          <option value="group1">IA-31</option>
-          <option value="group2">IA-32</option>
-          <option value="group3">IA-33</option>
-          <option value="group4">IA-34</option>
-        </select>
-      </div>
+    <div class="form-floating mb-3">
+      <input
+        type="tel"
+        class="form-control"
+        id="floatingPhone"
+        name="phone"
+        placeholder="Your phone"
+        maxlength="17"
+        required
+      />
+      <label for="floatingPhone">Phone Number</label>
+      <span id="phoneError" class="error-message"></span>
+    </div>
 
-      <div class="mb-3">
-        <label for="file-upload" class="form-label">Upload File:</label>
-        <input
-          class="form-control"
-          type="file"
-          id="file-upload"
-          name="file-upload"
-          accept=".pdf,.doc,.docx"
-          required />
-      </div>
+    <div class="mb-3">
+      <label for="group" class="form-label">Select Group:</label>
+      <select class="form-select" id="group" name="group" required>
+        <option value="group1">IA-31</option>
+        <option value="group2">IA-32</option>
+        <option value="group3">IA-33</option>
+        <option value="group4">IA-34</option>
+      </select>
+    </div>
 
-      <div class="auth-group-item center">
-        <button type="submit" class="btn btn-submit">Sign Up</button>
-      </div>
-    </form>
-  </div>
+    <div class="mb-3">
+      <label for="file-upload" class="form-label">Upload File:</label>
+      <input
+        class="form-control"
+        type="file"
+        id="file-upload"
+        name="file-upload"
+        accept=".pdf,.doc,.docx"
+        required
+      />
+    </div>
+
+    <div class="auth-group-item center">
+      <button type="submit" class="btn btn-submit">Sign Up</button>
+    </div>
+  </form>
+
+  <table id="user-table" class="table mt-4" style="display: none">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Surname</th>
+        <th>Name</th>
+        <th>Patronymic</th>
+        <th>Date of Birth</th>
+        <th>Phone</th>
+        <th>Group</th>
+        <th>Upload File</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
 
 {% endblock %}
